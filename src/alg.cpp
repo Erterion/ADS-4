@@ -4,8 +4,7 @@
 #include <cassert>
 template<typename T>
 class TPQueue {
-  // Сюда помещается описание структуры "Очередь с приоритетами"
- private:
+private:
 T* arr;
 int size;
 int begin, end;
@@ -22,8 +21,7 @@ if (res > size)
 res -= size + 1;
 return res;
 }
-
- public:
+public:
 TPQueue() :
 size(100),
 begin(0), end(0), count(0) {
@@ -61,10 +59,8 @@ bool isFull() const {
 return count == size;
 }
 };
-
 struct SYM {
-  char ch;
-  int  prior;
+char ch;
+int  prior;
 };
-
 #endif // INCLUDE_TPQUEUE_H_
