@@ -4,7 +4,7 @@
 #include <cassert>
 template<typename T>
 class TPQueue {
-private:
+ private:
 	T* arr;
 	int size;
 	int begin, end;
@@ -21,7 +21,7 @@ private:
 			res -= size + 1;
 		return res;
 	}
-public:
+ public:
 	TPQueue() :
 		size(100),
 		begin(0), end(0), count(0) {
